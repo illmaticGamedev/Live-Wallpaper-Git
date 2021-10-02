@@ -1,0 +1,1 @@
+{"abbreviation":"IST","client_ip":"171.79.116.111","datetime":"2021-10-02T21:15:07.657226+05:30","day_of_week":6,"day_of_year":275,"dst":false,"dst_from":null,"dst_offset":0,"dst_until":null,"raw_offset":19800,"timezone":"Asia/Kolkata","unixtime":1633189507,"utc_datetime":"2021-10-02T15:45:07.657226+00:00","utc_offset":"+05:30","week_number":39}
