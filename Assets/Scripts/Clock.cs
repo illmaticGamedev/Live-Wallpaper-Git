@@ -1,75 +1,67 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Text;
 using TMPro;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class Clock : MonoBehaviour
+public class Clock : APIFeature
 {
-    [SerializeField] private string indiaKolkataTimeURL = "";
-    [SerializeField] private string kentuckyUSATimeURL = "";
-    [SerializeField] private TMP_Text istClockText;
-    [SerializeField] private TMP_Text usaClockText;
-    [SerializeField]  bool blink = true;
+    public enum timeZone { India, KentuckyUSA}
+    public timeZone myTimeZone;
+    
+    [SerializeField] private string timeZoneAPIURL = "";
+    [SerializeField] private TMP_Text clockTextUI;
     private void Start()
     {
-        CheckTime(indiaKolkataTimeURL,istClockText,indiaKolkataTimeURL);
-        CheckTime(kentuckyUSATimeURL,usaClockText,kentuckyUSATimeURL);
+        CheckResponseJson.Instance.GetJsonResponse(timeZoneAPIURL,this);
+        InvokeRepeating(nameof(PerformMechanic),CheckResponseJson.Instance.appUpdateRateInSeconds,CheckResponseJson.Instance.appUpdateRateInSeconds);
     }
-
-    private void SetTime(TMP_Text timeZoneText, string currentTime)
+    private void OnValidate()
     {
-        // Some formatting here
+       RefreshAPIURL();
+    }
+    void RefreshAPIURL()
+    {
+        switch (myTimeZone)
+        {
+            case timeZone.KentuckyUSA:
+                timeZoneAPIURL = GlobalConstants.KENTUCKY_CLOCK_URL;
+                break;
+            case timeZone.India:
+                timeZoneAPIURL = GlobalConstants.INDIA_CLOCK_URL;
+                break;
+        }
+    }
+    void SetTime(TMP_Text timeZoneText, string currentTime)
+    {
         timeZoneText.text = currentTime.ToString();
     }
-    void CheckTime(string requestURL, TMP_Text ClockText, string currentTimeText)
+    public override void PerformMechanic()
     {
-        StartCoroutine(SendRequest(requestURL,ClockText,currentTimeText));
-    }
+        if (Response == null) return;
+        
+        ClockHelper newTime = JsonUtility.FromJson<ClockHelper>(Response);
+        string currentTimeInCorrectFormat = "";
+        char[] characters = newTime.datetime.ToCharArray();
 
-    IEnumerator SendRequest(string url, TMP_Text clockText, string currentTimeText)
-    {
-        while (true)
+        for (int i = 0; i < characters.Length; i++)
         {
-            UnityWebRequest request = new UnityWebRequest(url);
-            DownloadHandlerBuffer dH = new DownloadHandlerBuffer();
-            request.downloadHandler = dH;
-            yield return request.SendWebRequest();
-        
-            if (request.error != null)
+            if (characters[i] == 'T')
             {
-                Debug.LogError("Request Failed");
-            }
-            else
-            {   
-                JsonHelper newTime = JsonUtility.FromJson<JsonHelper>(dH.text);
-                string currentTimeInCorrectFormat = "";
-                char[] characters = newTime.datetime.ToCharArray();
-
-                for (int i = 0; i < characters.Length; i++)
+                for (int j = 0; j < 8; j++)
                 {
-                    if (characters[i] == 'T')
-                    {
-                        for (int j = 0; j < 8; j++)
-                        {
-                            currentTimeInCorrectFormat += characters[i + j + 1];
-                        }
-                        break;
-                    }
+                    currentTimeInCorrectFormat += characters[i + j + 1];
                 }
-                SetTime(clockText,currentTimeInCorrectFormat);
+
+                break;
             }
-            yield return new WaitForSecondsRealtime(0.5f);
         }
-        
+        SetTime(clockTextUI, currentTimeInCorrectFormat);
     }
-    
 }
+
 [System.Serializable]
-public class JsonHelper
+public struct ClockHelper
 {
     public string datetime;
     public string timezone;
