@@ -7,18 +7,17 @@ using UnityEngine.Networking;
 public class CheckResponseJson : MonoBehaviour
 {
     public static CheckResponseJson Instance;
-    [SerializeField] public float appUpdateRateInSeconds = 0.5f;
     private void Awake()
     {
         Instance = this;
     }
 
-    public void GetJsonResponse(string url, APIFeature featureClass)
+    public void GetJsonResponse(string url, APIFeature featureClass, float apiRepeatRateInSeconds)
     {
-        StartCoroutine(checkJsonResponse(url, featureClass));
+        StartCoroutine(checkJsonResponse(url, featureClass, apiRepeatRateInSeconds));
     }
 
-    IEnumerator checkJsonResponse(string url, APIFeature featureClass)
+    IEnumerator checkJsonResponse(string url, APIFeature featureClass, float apiRepeatRateInSeconds)
     {
         while (true)
         {
@@ -30,14 +29,14 @@ public class CheckResponseJson : MonoBehaviour
             if (request.error != null)
             {
                 if(Application.isEditor)
-                    Debug.LogError("Request Failed");
+                    Debug.LogError("Request Failed : " + featureClass.name);
             }
             else
             {
                 featureClass.Response = dH.text;
             }
             
-            yield return new WaitForSecondsRealtime(appUpdateRateInSeconds);
+            yield return new WaitForSecondsRealtime(apiRepeatRateInSeconds);
         }
     }
 }

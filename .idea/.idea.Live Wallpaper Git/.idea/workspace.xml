@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b34add91-90ff-43f0-a7fe-16b6940210db" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Clock.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/APIFeature.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/APIFeature.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CheckResponseJson.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CheckResponseJson.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clock.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clock.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wallpaper.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wallpaper.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,17 +21,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Features/CryptoToUSD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/APIFeature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CheckResponseJson.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/public interface IResponseNeeded { }.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CheckResponseJson.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ResponseNeeded.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/APIFeature.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Clock.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Features/Clock.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Features/CryptoToUSD.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/APIFeature.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CheckResponseJson.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1yxj6d6QFONvckemzJELt1HDqbe" />
@@ -71,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633199960554</updated>
       <workItem from="1633199963884" duration="87000" />
-      <workItem from="1633294151521" duration="3126000" />
+      <workItem from="1633294151521" duration="6525000" />
     </task>
     <servers />
   </component>

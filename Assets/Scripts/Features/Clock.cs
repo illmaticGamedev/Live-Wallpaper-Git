@@ -9,13 +9,9 @@ public class Clock : APIFeature
     public enum timeZone { India, KentuckyUSA}
     public timeZone myTimeZone;
     
-    [SerializeField] private string timeZoneAPIURL = "";
+    
     [SerializeField] private TMP_Text clockTextUI;
-    private void Start()
-    {
-        CheckResponseJson.Instance.GetJsonResponse(timeZoneAPIURL,this);
-        InvokeRepeating(nameof(PerformMechanic),CheckResponseJson.Instance.appUpdateRateInSeconds,CheckResponseJson.Instance.appUpdateRateInSeconds);
-    }
+
     private void OnValidate()
     {
        RefreshAPIURL();
@@ -25,10 +21,10 @@ public class Clock : APIFeature
         switch (myTimeZone)
         {
             case timeZone.KentuckyUSA:
-                timeZoneAPIURL = GlobalConstants.KENTUCKY_CLOCK_URL;
+                apiURL = GlobalConstants.KENTUCKY_CLOCK_URL;
                 break;
             case timeZone.India:
-                timeZoneAPIURL = GlobalConstants.INDIA_CLOCK_URL;
+                apiURL = GlobalConstants.INDIA_CLOCK_URL;
                 break;
         }
     }
