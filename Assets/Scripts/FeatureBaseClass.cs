@@ -1,7 +1,7 @@
 ﻿
     using UnityEngine;
 
-    public  abstract class APIFeature : MonoBehaviour
+    public  abstract class FeatureBaseClass : MonoBehaviour
     {
         [HideInInspector] public string apiURL = "";
         [HideInInspector] public string Response;

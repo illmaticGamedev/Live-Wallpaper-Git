@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class Clock : APIFeature
+public class Clock : FeatureBaseClass
 {
     public enum timeZone { India, KentuckyUSA}
     public timeZone myTimeZone;

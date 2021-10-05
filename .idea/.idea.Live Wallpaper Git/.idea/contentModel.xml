@@ -7,11 +7,12 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="APIFeature.cs" t="Include" />
           <e p="CheckResponseJson.cs" t="Include" />
+          <e p="FeatureBaseClass.cs" t="Include" />
           <e p="Features" t="Include">
             <e p="Clock.cs" t="Include" />
             <e p="CryptoToUSD.cs" t="Include" />
+            <e p="MakeAPost.cs" t="Include" />
           </e>
           <e p="GlobalConstants.cs" t="Include" />
         </e>

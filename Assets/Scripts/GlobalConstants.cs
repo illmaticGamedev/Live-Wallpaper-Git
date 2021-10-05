@@ -11,4 +11,9 @@
         public const string DOGE_TO_USD_URL = "https://cex.io/api/last_price/DOGE/USD";
         public const string ADA_TO_USD_URL = "https://cex.io/api/last_price/ADA/USD";
         public const string XRP_TO_USD_URL = "https://cex.io/api/last_price/XRP/USD";
+        
+        //Make Post API
+        public const string POST_TO_FACEBOOK = "https://www.facebook.com";
+        public const string POST_TO_TWITTER = "https://www.twitter.com/intent/tweet";
+        public const string POST_TO_LINKEDIN = "https://www.linkedin.com/feed/";
     }

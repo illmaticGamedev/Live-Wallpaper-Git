@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class CryptoToUSD : APIFeature
+public class CryptoToUSD : FeatureBaseClass
 {
     public enum cryptoCurrency { Btc, Eth, Ada, Doge, Xrp}
     public cryptoCurrency myCryptoCurrency;

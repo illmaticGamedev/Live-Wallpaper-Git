@@ -12,12 +12,12 @@ public class CheckResponseJson : MonoBehaviour
         Instance = this;
     }
 
-    public void GetJsonResponse(string url, APIFeature featureClass, float apiRepeatRateInSeconds)
+    public void GetJsonResponse(string url, FeatureBaseClass featureBaseClassClass, float apiRepeatRateInSeconds)
     {
-        StartCoroutine(checkJsonResponse(url, featureClass, apiRepeatRateInSeconds));
+        StartCoroutine(checkJsonResponse(url, featureBaseClassClass, apiRepeatRateInSeconds));
     }
 
-    IEnumerator checkJsonResponse(string url, APIFeature featureClass, float apiRepeatRateInSeconds)
+    IEnumerator checkJsonResponse(string url, FeatureBaseClass featureBaseClassClass, float apiRepeatRateInSeconds)
     {
         while (true)
         {
@@ -29,11 +29,11 @@ public class CheckResponseJson : MonoBehaviour
             if (request.error != null)
             {
                 if(Application.isEditor)
-                    Debug.LogError("Request Failed : " + featureClass.name);
+                    Debug.LogError("Request Failed : " + featureBaseClassClass.name);
             }
             else
             {
-                featureClass.Response = dH.text;
+                featureBaseClassClass.Response = dH.text;
             }
             
             yield return new WaitForSecondsRealtime(apiRepeatRateInSeconds);
