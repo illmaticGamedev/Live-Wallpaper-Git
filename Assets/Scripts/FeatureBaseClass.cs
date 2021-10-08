@@ -15,7 +15,7 @@
             {
                 CheckResponseJson.Instance.GetJsonResponse(apiURL,this,updateRateInSeconds);
             }
-            InvokeRepeating(nameof(PerformMechanic),1f,updateRateInSeconds);
+            InvokeRepeating(nameof(PerformMechanic),1,updateRateInSeconds);
         }
 
         

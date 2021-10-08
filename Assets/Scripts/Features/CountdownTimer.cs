@@ -44,6 +44,7 @@ public class CountdownTimer : FeatureBaseClass
       savedName = gameObject.name + " Name";
       
       CheckLastSavedSettings();
+      PerformMechanic();
    }
 
    public override void PerformMechanic()
