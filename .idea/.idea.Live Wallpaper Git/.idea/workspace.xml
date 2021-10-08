@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b34add91-90ff-43f0-a7fe-16b6940210db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FeatureBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FeatureBaseClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Wallpaper.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wallpaper.unity" afterDir="false" />
-    </list>
+    <list default="true" id="b34add91-90ff-43f0-a7fe-16b6940210db" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +76,7 @@
       <workItem from="1633199963884" duration="87000" />
       <workItem from="1633294151521" duration="6661000" />
       <workItem from="1633387912869" duration="1967000" />
-      <workItem from="1633648185138" duration="5039000" />
+      <workItem from="1633648185138" duration="5185000" />
     </task>
     <servers />
   </component>
