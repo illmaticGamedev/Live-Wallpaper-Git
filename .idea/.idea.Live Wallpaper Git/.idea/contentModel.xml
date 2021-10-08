@@ -11,6 +11,7 @@
           <e p="FeatureBaseClass.cs" t="Include" />
           <e p="Features" t="Include">
             <e p="Clock.cs" t="Include" />
+            <e p="CountdownTimer.cs" t="Include" />
             <e p="CryptoToUSD.cs" t="Include" />
             <e p="MakeAPost.cs" t="Include" />
           </e>

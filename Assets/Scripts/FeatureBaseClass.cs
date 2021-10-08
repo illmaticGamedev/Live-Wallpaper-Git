@@ -3,15 +3,19 @@
 
     public  abstract class FeatureBaseClass : MonoBehaviour
     {
+        public bool needAPI = true;
         [HideInInspector] public string apiURL = "";
         [HideInInspector] public string Response;
-        public float apiRepeatRateInSeconds = 0.5f;
+        public float updateRateInSeconds = 0.5f;
         public abstract void PerformMechanic();
         
-        private void Start()
+        protected virtual void Start()
         {
-            CheckResponseJson.Instance.GetJsonResponse(apiURL,this,apiRepeatRateInSeconds);
-            InvokeRepeating(nameof(PerformMechanic),apiRepeatRateInSeconds,apiRepeatRateInSeconds);
+            if (needAPI)
+            {
+                CheckResponseJson.Instance.GetJsonResponse(apiURL,this,updateRateInSeconds);
+            }
+            InvokeRepeating(nameof(PerformMechanic),1f,updateRateInSeconds);
         }
 
         
