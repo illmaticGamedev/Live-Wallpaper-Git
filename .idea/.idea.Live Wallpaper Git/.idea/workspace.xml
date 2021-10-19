@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b34add91-90ff-43f0-a7fe-16b6940210db" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Features/NoteItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Features/NoteItem.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Countdown Timer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Countdown Timer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wallpaper.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wallpaper.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +34,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Features/MakeAPost.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GlobalConstants.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CheckResponseJson.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Features/CountdownTimer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FeatureBaseClass.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Features/CountdownTimer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Test/CodePractice.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Features/NoteItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Features/NotesBox.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1yxj6d6QFONvckemzJELt1HDqbe" />
@@ -41,6 +47,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -82,6 +90,12 @@
       <workItem from="1633387912869" duration="1967000" />
       <workItem from="1633648185138" duration="5185000" />
       <workItem from="1633653479512" duration="27000" />
+      <workItem from="1633653827642" duration="196000" />
+      <workItem from="1634093480527" duration="3623000" />
+      <workItem from="1634097180026" duration="3770000" />
+      <workItem from="1634101237655" duration="592000" />
+      <workItem from="1634305846902" duration="6887000" />
+      <workItem from="1634677035227" duration="1834000" />
     </task>
     <servers />
   </component>

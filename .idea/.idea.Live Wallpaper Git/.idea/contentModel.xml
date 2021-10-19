@@ -14,8 +14,13 @@
             <e p="CountdownTimer.cs" t="Include" />
             <e p="CryptoToUSD.cs" t="Include" />
             <e p="MakeAPost.cs" t="Include" />
+            <e p="NoteItem.cs" t="Include" />
+            <e p="NotesBox.cs" t="Include" />
           </e>
           <e p="GlobalConstants.cs" t="Include" />
+        </e>
+        <e p="Test" t="Include">
+          <e p="CodePractice.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
