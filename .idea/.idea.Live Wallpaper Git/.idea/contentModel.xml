@@ -19,6 +19,9 @@
           </e>
           <e p="GlobalConstants.cs" t="Include" />
         </e>
+        <e p="StreamingAssets" t="Include">
+          <e p="Notes.txt" t="Include" />
+        </e>
         <e p="Test" t="Include">
           <e p="CodePractice.cs" t="Include" />
         </e>

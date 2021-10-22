@@ -1,24 +1,35 @@
 ﻿using System;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class NoteItem : MonoBehaviour
 {
     public Button deleteButton;
     public Button editButton;
-
+    public TMP_InputField myInputField;
     private void OnEnable()
     {
         deleteButton.onClick.AddListener(DeleteNote);
+        //yInputField = GetComponent<TMP_InputField>();
+        myInputField.onEndEdit.AddListener(AfterEditNote);
     }
 
+    private void AfterEditNote(string arg0)
+    {
+       Debug.Log("SAVED STRING : " + arg0);
+    }
+    
     void DeleteNote()
     {
         Destroy(this.gameObject);
     }
 
-    void EditNote()
+    public void LoadNote(string Note)
     {
-        // might add something here later
+        myInputField.text = Note;
     }
+
+  
 }
