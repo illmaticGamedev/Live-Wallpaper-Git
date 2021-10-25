@@ -10,7 +10,7 @@ public class NotesBox : MonoBehaviour
     [SerializeField] private VerticalLayoutGroup _verticalLayoutGroup;
     [SerializeField] private GameObject newNotePrefab;
     [SerializeField] private Button btnAddNewNote;
-
+    string readFromFilePath = Application.streamingAssetsPath + "/Notes.txt";
     private List<NoteItem> allNotes = new List<NoteItem>();
 
 
@@ -25,14 +25,13 @@ public class NotesBox : MonoBehaviour
         allNotes.Add(Instantiate(newNotePrefab, _verticalLayoutGroup.transform).GetComponent<NoteItem>());
     }
 
-    public void SaveNotes(string note)
+    public void SaveNote(string note)
     {
-        
+        File.AppendAllText(readFromFilePath,note + "\n");
     }
 
     void LoadNotes()
     {
-        string readFromFilePath = Application.streamingAssetsPath + "/Notes.txt";
         List<string> fileLines = File.ReadAllLines(readFromFilePath).ToList();
 
         foreach (var item in fileLines)
@@ -43,4 +42,17 @@ public class NotesBox : MonoBehaviour
         }
         
     }
+
+   public void DeleteNote(string note)
+    {
+        var tempFile = Path.GetTempFileName();
+        var linesToKeep = File.ReadLines(readFromFilePath).Where(l => l != note);
+
+        File.WriteAllLines(tempFile, linesToKeep);
+
+        File.Delete(readFromFilePath);
+        File.Move(tempFile, readFromFilePath);
+    }
+
+   
 }
