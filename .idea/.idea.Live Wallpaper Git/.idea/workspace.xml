@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b34add91-90ff-43f0-a7fe-16b6940210db" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/NotesItemBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/NotesItemBlock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/NoteItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/NoteItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Features/NotesBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Features/NotesBox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wallpaper.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wallpaper.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +16,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AppManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Features/CryptoToUSD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FeatureBaseClass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CheckResponseJson.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,6 +39,7 @@
       <option value="$PROJECT_DIR$/Assets/StreamingAssets/Notes.txt" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Features/NoteItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Features/NotesBox.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1yxj6d6QFONvckemzJELt1HDqbe" />
@@ -99,7 +99,8 @@
       <workItem from="1634677035227" duration="2229000" />
       <workItem from="1634907195941" duration="2082000" />
       <workItem from="1634909331915" duration="405000" />
-      <workItem from="1635188642883" duration="5070000" />
+      <workItem from="1635188642883" duration="5253000" />
+      <workItem from="1635271040245" duration="3293000" />
     </task>
     <servers />
   </component>
