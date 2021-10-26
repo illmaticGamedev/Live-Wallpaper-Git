@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b34add91-90ff-43f0-a7fe-16b6940210db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Live Wallpaper Git/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Wallpaper.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wallpaper.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +38,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FeatureBaseClass.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Features/CountdownTimer.cs" />
       <option value="$PROJECT_DIR$/Assets/Test/CodePractice.cs" />
-      <option value="$PROJECT_DIR$/Assets/StreamingAssets/Notes.txt" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Features/NoteItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Features/NotesBox.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AppManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/StreamingAssets/Notes.txt" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1yxj6d6QFONvckemzJELt1HDqbe" />
@@ -59,6 +61,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../BUILDS/Live Info Wallpaper\Live Wallpaper.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\BYTEHOP\BUILDS\Live Info Wallpaper" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -100,7 +110,8 @@
       <workItem from="1634907195941" duration="2082000" />
       <workItem from="1634909331915" duration="405000" />
       <workItem from="1635188642883" duration="5253000" />
-      <workItem from="1635271040245" duration="3293000" />
+      <workItem from="1635271040245" duration="4837000" />
+      <workItem from="1635291338722" duration="490000" />
     </task>
     <servers />
   </component>
